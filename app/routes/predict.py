@@ -1,4 +1,4 @@
-from fastapi import APIRouter, UploadFile, File, HTTPException
+from fastapi import APIRouter, UploadFile, File, HTTPException, Request
 from app.schemas.response import AnalysisResponse
 from app.utils.image_utils import validate_image_file, load_image_from_bytes, fix_exif_rotation
 from app.utils.logger import logger
@@ -10,7 +10,7 @@ MAX_FILE_SIZE = 10 * 1024 * 1024  # 10 MB
 
 
 @router.post("/api/predict", response_model=AnalysisResponse)
-async def predict(file: UploadFile = File(...)):
+async def predict(request: Request, file: UploadFile = File(...)):
     """
     Analyse a food image and return detected food items with nutrient estimates.
     """
@@ -35,7 +35,7 @@ async def predict(file: UploadFile = File(...)):
     except Exception as exc:
         raise HTTPException(status_code=400, detail=f"Could not open image: {exc}")
 
-    from app.main import pipeline
+    pipeline = getattr(request.app.state, "pipeline", None)
     if pipeline is None:
         raise HTTPException(status_code=503, detail="Analysis pipeline not initialised")
 

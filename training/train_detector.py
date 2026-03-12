@@ -17,7 +17,7 @@ def parse_args():
     parser.add_argument("--img_size", type=int, default=640)
     parser.add_argument("--output_dir", type=str, default="./models")
     parser.add_argument("--name", type=str, default="food_detector")
-    parser.add_argument("--wandb", action="store_true", default=False)
+    parser.add_argument("--wandb", action="store_true")
     return parser.parse_args()
 
 

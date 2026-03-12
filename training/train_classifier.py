@@ -19,8 +19,8 @@ def parse_args():
     parser.add_argument("--lr", type=float, default=1e-4)
     parser.add_argument("--img_size", type=int, default=380)
     parser.add_argument("--num_workers", type=int, default=4)
-    parser.add_argument("--pretrained", action="store_true", default=True)
-    parser.add_argument("--wandb", action="store_true", default=False)
+    parser.add_argument("--pretrained", action=argparse.BooleanOptionalAction, default=True)
+    parser.add_argument("--wandb", action="store_true")
     return parser.parse_args()
 
 

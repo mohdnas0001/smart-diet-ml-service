@@ -1,4 +1,4 @@
-from fastapi import APIRouter, HTTPException, Query
+from fastapi import APIRouter, HTTPException, Query, Request
 from app.schemas.response import NutrientProfile
 from app.utils.logger import logger
 
@@ -6,11 +6,11 @@ router = APIRouter()
 
 
 @router.get("/api/nutrients/{food_name}", response_model=NutrientProfile)
-async def get_nutrients(food_name: str, portion_grams: float = Query(default=100.0, ge=1.0, le=5000.0)):
+async def get_nutrients(request: Request, food_name: str, portion_grams: float = Query(default=100.0, ge=1.0, le=5000.0)):
     """
     Look up nutrient profile for a given food name (per portion_grams).
     """
-    from app.main import nutrient_service
+    nutrient_service = getattr(request.app.state, "nutrient_service", None)
     if nutrient_service is None:
         raise HTTPException(status_code=503, detail="Nutrient service not initialised")
 

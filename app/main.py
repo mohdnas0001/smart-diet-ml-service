@@ -14,14 +14,9 @@ from app.services.usda_client import USDAClient
 from app.services.nutritionix_client import NutritionixClient
 from app.routes import predict, health, nutrients
 
-# Module-level singletons (populated on startup)
-pipeline: AnalysisPipeline | None = None
-nutrient_service: NutrientService | None = None
-
 
 @asynccontextmanager
 async def lifespan(app: FastAPI):
-    global pipeline, nutrient_service
     logger.info("Starting Smart Diet ML Service v%s", settings.APP_VERSION)
 
     categories_path = f"{settings.DATA_DIR}/food_categories.json"
@@ -48,7 +43,7 @@ async def lifespan(app: FastAPI):
     )
     food_mapper = FoodMapper(nigerian_foods_path=nigerian_foods_path)
 
-    nutrient_service = NutrientService(
+    nutrient_svc = NutrientService(
         nigerian_foods_path=nigerian_foods_path,
         usda_client=usda_client,
         nutritionix_client=nutritionix_client,
@@ -59,10 +54,13 @@ async def lifespan(app: FastAPI):
         detector=detector,
         classifier=classifier,
         portion_estimator=portion_estimator,
-        nutrient_service=nutrient_service,
+        nutrient_service=nutrient_svc,
         food_mapper=food_mapper,
         demo_mode=demo,
     )
+
+    app.state.pipeline = pipeline
+    app.state.nutrient_service = nutrient_svc
 
     logger.info("Pipeline ready. Demo mode: %s", demo)
     yield
