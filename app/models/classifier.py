@@ -21,7 +21,7 @@ class FoodClassifier:
                 import torch
                 import timm
                 self.model = timm.create_model("efficientnet_b4", pretrained=False, num_classes=len(self.food_categories))
-                self.model.load_state_dict(torch.load(str(path), map_location="cpu"))
+                self.model.load_state_dict(torch.load(str(path), map_location="cpu", weights_only=True))
                 self.model.eval()
                 self.demo_mode = False
                 logger.info("EfficientNet-B4 model loaded from %s", model_path)

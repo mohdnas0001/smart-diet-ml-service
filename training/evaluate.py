@@ -30,7 +30,7 @@ def main():
     device = torch.device("cuda" if torch.cuda.is_available() else "cpu")
 
     model = timm.create_model("efficientnet_b4", pretrained=False, num_classes=args.num_classes)
-    model.load_state_dict(torch.load(args.model_path, map_location=device))
+    model.load_state_dict(torch.load(args.model_path, map_location=device, weights_only=True))
     model = model.to(device)
     model.eval()
 

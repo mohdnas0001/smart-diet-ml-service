@@ -35,7 +35,7 @@ def main():
     import timm
 
     model = timm.create_model("efficientnet_b4", pretrained=False, num_classes=args.num_classes)
-    model.load_state_dict(torch.load(args.model_path, map_location="cpu"))
+    model.load_state_dict(torch.load(args.model_path, map_location="cpu", weights_only=True))
     model.eval()
 
     if args.format == "onnx":
