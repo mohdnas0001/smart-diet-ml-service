@@ -1,0 +1,1760 @@
+[
+  {
+    "id": 1,
+    "name": "jollof_rice",
+    "region": "nigerian",
+    "typical_portion_grams": 350.0
+  },
+  {
+    "id": 2,
+    "name": "fried_rice",
+    "region": "nigerian",
+    "typical_portion_grams": 250.0
+  },
+  {
+    "id": 3,
+    "name": "ofada_rice",
+    "region": "nigerian",
+    "typical_portion_grams": 250.0
+  },
+  {
+    "id": 4,
+    "name": "coconut_rice",
+    "region": "nigerian",
+    "typical_portion_grams": 250.0
+  },
+  {
+    "id": 5,
+    "name": "tuwo_shinkafa",
+    "region": "nigerian",
+    "typical_portion_grams": 250.0
+  },
+  {
+    "id": 6,
+    "name": "egusi_soup",
+    "region": "nigerian",
+    "typical_portion_grams": 250.0
+  },
+  {
+    "id": 7,
+    "name": "ogbono_soup",
+    "region": "nigerian",
+    "typical_portion_grams": 250.0
+  },
+  {
+    "id": 8,
+    "name": "pepper_soup",
+    "region": "nigerian",
+    "typical_portion_grams": 300.0
+  },
+  {
+    "id": 9,
+    "name": "efo_riro",
+    "region": "nigerian",
+    "typical_portion_grams": 250.0
+  },
+  {
+    "id": 10,
+    "name": "afang_soup",
+    "region": "nigerian",
+    "typical_portion_grams": 250.0
+  },
+  {
+    "id": 11,
+    "name": "edikang_ikong",
+    "region": "nigerian",
+    "typical_portion_grams": 250.0
+  },
+  {
+    "id": 12,
+    "name": "groundnut_soup",
+    "region": "nigerian",
+    "typical_portion_grams": 250.0
+  },
+  {
+    "id": 13,
+    "name": "banga_soup",
+    "region": "nigerian",
+    "typical_portion_grams": 250.0
+  },
+  {
+    "id": 14,
+    "name": "oha_soup",
+    "region": "nigerian",
+    "typical_portion_grams": 250.0
+  },
+  {
+    "id": 15,
+    "name": "nsala_soup",
+    "region": "nigerian",
+    "typical_portion_grams": 250.0
+  },
+  {
+    "id": 16,
+    "name": "gbegiri",
+    "region": "nigerian",
+    "typical_portion_grams": 250.0
+  },
+  {
+    "id": 17,
+    "name": "ewedu",
+    "region": "nigerian",
+    "typical_portion_grams": 250.0
+  },
+  {
+    "id": 18,
+    "name": "miyan_kuka",
+    "region": "nigerian",
+    "typical_portion_grams": 250.0
+  },
+  {
+    "id": 19,
+    "name": "okra_soup",
+    "region": "nigerian",
+    "typical_portion_grams": 250.0
+  },
+  {
+    "id": 20,
+    "name": "pounded_yam",
+    "region": "nigerian",
+    "typical_portion_grams": 350.0
+  },
+  {
+    "id": 21,
+    "name": "amala",
+    "region": "nigerian",
+    "typical_portion_grams": 300.0
+  },
+  {
+    "id": 22,
+    "name": "eba",
+    "region": "nigerian",
+    "typical_portion_grams": 250.0
+  },
+  {
+    "id": 23,
+    "name": "fufu",
+    "region": "nigerian",
+    "typical_portion_grams": 250.0
+  },
+  {
+    "id": 24,
+    "name": "semovita",
+    "region": "nigerian",
+    "typical_portion_grams": 250.0
+  },
+  {
+    "id": 25,
+    "name": "wheat_meal",
+    "region": "nigerian",
+    "typical_portion_grams": 250.0
+  },
+  {
+    "id": 26,
+    "name": "tuwo_masara",
+    "region": "nigerian",
+    "typical_portion_grams": 250.0
+  },
+  {
+    "id": 27,
+    "name": "starch",
+    "region": "nigerian",
+    "typical_portion_grams": 250.0
+  },
+  {
+    "id": 28,
+    "name": "suya",
+    "region": "nigerian",
+    "typical_portion_grams": 120.0
+  },
+  {
+    "id": 29,
+    "name": "kilishi",
+    "region": "nigerian",
+    "typical_portion_grams": 250.0
+  },
+  {
+    "id": 30,
+    "name": "nkwobi",
+    "region": "nigerian",
+    "typical_portion_grams": 250.0
+  },
+  {
+    "id": 31,
+    "name": "peppered_snail",
+    "region": "nigerian",
+    "typical_portion_grams": 250.0
+  },
+  {
+    "id": 32,
+    "name": "isi_ewu",
+    "region": "nigerian",
+    "typical_portion_grams": 250.0
+  },
+  {
+    "id": 33,
+    "name": "asun",
+    "region": "nigerian",
+    "typical_portion_grams": 250.0
+  },
+  {
+    "id": 34,
+    "name": "grilled_fish",
+    "region": "nigerian",
+    "typical_portion_grams": 250.0
+  },
+  {
+    "id": 35,
+    "name": "fried_fish",
+    "region": "nigerian",
+    "typical_portion_grams": 250.0
+  },
+  {
+    "id": 36,
+    "name": "peppered_turkey",
+    "region": "nigerian",
+    "typical_portion_grams": 250.0
+  },
+  {
+    "id": 37,
+    "name": "stockfish",
+    "region": "nigerian",
+    "typical_portion_grams": 250.0
+  },
+  {
+    "id": 38,
+    "name": "akara",
+    "region": "nigerian",
+    "typical_portion_grams": 150.0
+  },
+  {
+    "id": 39,
+    "name": "moin_moin",
+    "region": "nigerian",
+    "typical_portion_grams": 200.0
+  },
+  {
+    "id": 40,
+    "name": "chin_chin",
+    "region": "nigerian",
+    "typical_portion_grams": 80.0
+  },
+  {
+    "id": 41,
+    "name": "puff_puff",
+    "region": "nigerian",
+    "typical_portion_grams": 120.0
+  },
+  {
+    "id": 42,
+    "name": "boli",
+    "region": "nigerian",
+    "typical_portion_grams": 180.0
+  },
+  {
+    "id": 43,
+    "name": "fried_plantain",
+    "region": "nigerian",
+    "typical_portion_grams": 150.0
+  },
+  {
+    "id": 44,
+    "name": "dundun",
+    "region": "nigerian",
+    "typical_portion_grams": 250.0
+  },
+  {
+    "id": 45,
+    "name": "ojojo",
+    "region": "nigerian",
+    "typical_portion_grams": 250.0
+  },
+  {
+    "id": 46,
+    "name": "kokoro",
+    "region": "nigerian",
+    "typical_portion_grams": 250.0
+  },
+  {
+    "id": 47,
+    "name": "kulikuli",
+    "region": "nigerian",
+    "typical_portion_grams": 250.0
+  },
+  {
+    "id": 48,
+    "name": "zobo",
+    "region": "nigerian",
+    "typical_portion_grams": 350.0
+  },
+  {
+    "id": 49,
+    "name": "kunu",
+    "region": "nigerian",
+    "typical_portion_grams": 350.0
+  },
+  {
+    "id": 50,
+    "name": "fura_da_nono",
+    "region": "nigerian",
+    "typical_portion_grams": 250.0
+  },
+  {
+    "id": 51,
+    "name": "palm_wine",
+    "region": "nigerian",
+    "typical_portion_grams": 250.0
+  },
+  {
+    "id": 52,
+    "name": "tiger_nut_milk",
+    "region": "nigerian",
+    "typical_portion_grams": 250.0
+  },
+  {
+    "id": 53,
+    "name": "ewa_riro",
+    "region": "nigerian",
+    "typical_portion_grams": 250.0
+  },
+  {
+    "id": 54,
+    "name": "beans_and_dodo",
+    "region": "nigerian",
+    "typical_portion_grams": 250.0
+  },
+  {
+    "id": 55,
+    "name": "ewa_agoyin",
+    "region": "nigerian",
+    "typical_portion_grams": 250.0
+  },
+  {
+    "id": 56,
+    "name": "porridge_yam",
+    "region": "nigerian",
+    "typical_portion_grams": 250.0
+  },
+  {
+    "id": 57,
+    "name": "plantain_porridge",
+    "region": "nigerian",
+    "typical_portion_grams": 250.0
+  },
+  {
+    "id": 58,
+    "name": "yam_porridge",
+    "region": "nigerian",
+    "typical_portion_grams": 250.0
+  },
+  {
+    "id": 59,
+    "name": "ekpang_nkukwo",
+    "region": "nigerian",
+    "typical_portion_grams": 250.0
+  },
+  {
+    "id": 60,
+    "name": "abacha",
+    "region": "nigerian",
+    "typical_portion_grams": 250.0
+  },
+  {
+    "id": 61,
+    "name": "ukwa",
+    "region": "nigerian",
+    "typical_portion_grams": 250.0
+  },
+  {
+    "id": 62,
+    "name": "agidi",
+    "region": "nigerian",
+    "typical_portion_grams": 250.0
+  },
+  {
+    "id": 63,
+    "name": "ogi_pap",
+    "region": "nigerian",
+    "typical_portion_grams": 250.0
+  },
+  {
+    "id": 64,
+    "name": "masa",
+    "region": "nigerian",
+    "typical_portion_grams": 250.0
+  },
+  {
+    "id": 65,
+    "name": "waina",
+    "region": "nigerian",
+    "typical_portion_grams": 250.0
+  },
+  {
+    "id": 66,
+    "name": "kosai",
+    "region": "nigerian",
+    "typical_portion_grams": 250.0
+  },
+  {
+    "id": 67,
+    "name": "dan_wake",
+    "region": "nigerian",
+    "typical_portion_grams": 250.0
+  },
+  {
+    "id": 68,
+    "name": "miyan_taushe",
+    "region": "nigerian",
+    "typical_portion_grams": 250.0
+  },
+  {
+    "id": 69,
+    "name": "ofe_akwu",
+    "region": "nigerian",
+    "typical_portion_grams": 250.0
+  },
+  {
+    "id": 70,
+    "name": "ugba",
+    "region": "nigerian",
+    "typical_portion_grams": 250.0
+  },
+  {
+    "id": 71,
+    "name": "achicha",
+    "region": "nigerian",
+    "typical_portion_grams": 250.0
+  },
+  {
+    "id": 72,
+    "name": "okpa",
+    "region": "nigerian",
+    "typical_portion_grams": 250.0
+  },
+  {
+    "id": 73,
+    "name": "garden_egg_sauce",
+    "region": "nigerian",
+    "typical_portion_grams": 250.0
+  },
+  {
+    "id": 74,
+    "name": "catfish_pepper_soup",
+    "region": "nigerian",
+    "typical_portion_grams": 250.0
+  },
+  {
+    "id": 75,
+    "name": "goat_meat_pepper_soup",
+    "region": "nigerian",
+    "typical_portion_grams": 250.0
+  },
+  {
+    "id": 76,
+    "name": "cow_foot",
+    "region": "nigerian",
+    "typical_portion_grams": 250.0
+  },
+  {
+    "id": 77,
+    "name": "ponmo",
+    "region": "nigerian",
+    "typical_portion_grams": 250.0
+  },
+  {
+    "id": 78,
+    "name": "shaki",
+    "region": "nigerian",
+    "typical_portion_grams": 250.0
+  },
+  {
+    "id": 79,
+    "name": "dodo_ikire",
+    "region": "nigerian",
+    "typical_portion_grams": 250.0
+  },
+  {
+    "id": 80,
+    "name": "ila_asepo",
+    "region": "nigerian",
+    "typical_portion_grams": 250.0
+  },
+  {
+    "id": 81,
+    "name": "ayamase_stew",
+    "region": "nigerian",
+    "typical_portion_grams": 250.0
+  },
+  {
+    "id": 82,
+    "name": "ofada_stew",
+    "region": "nigerian",
+    "typical_portion_grams": 250.0
+  },
+  {
+    "id": 83,
+    "name": "pizza",
+    "region": "international",
+    "typical_portion_grams": 350.0
+  },
+  {
+    "id": 84,
+    "name": "hamburger",
+    "region": "international",
+    "typical_portion_grams": 250.0
+  },
+  {
+    "id": 85,
+    "name": "sushi",
+    "region": "international",
+    "typical_portion_grams": 200.0
+  },
+  {
+    "id": 86,
+    "name": "pasta",
+    "region": "international",
+    "typical_portion_grams": 350.0
+  },
+  {
+    "id": 87,
+    "name": "steak",
+    "region": "international",
+    "typical_portion_grams": 280.0
+  },
+  {
+    "id": 88,
+    "name": "caesar_salad",
+    "region": "international",
+    "typical_portion_grams": 200.0
+  },
+  {
+    "id": 89,
+    "name": "french_fries",
+    "region": "international",
+    "typical_portion_grams": 150.0
+  },
+  {
+    "id": 90,
+    "name": "hot_dog",
+    "region": "international",
+    "typical_portion_grams": 200.0
+  },
+  {
+    "id": 91,
+    "name": "fried_chicken",
+    "region": "international",
+    "typical_portion_grams": 200.0
+  },
+  {
+    "id": 92,
+    "name": "tacos",
+    "region": "international",
+    "typical_portion_grams": 200.0
+  },
+  {
+    "id": 93,
+    "name": "burrito",
+    "region": "international",
+    "typical_portion_grams": 200.0
+  },
+  {
+    "id": 94,
+    "name": "sandwich",
+    "region": "international",
+    "typical_portion_grams": 200.0
+  },
+  {
+    "id": 95,
+    "name": "grilled_salmon",
+    "region": "international",
+    "typical_portion_grams": 200.0
+  },
+  {
+    "id": 96,
+    "name": "shrimp_scampi",
+    "region": "international",
+    "typical_portion_grams": 200.0
+  },
+  {
+    "id": 97,
+    "name": "lobster",
+    "region": "international",
+    "typical_portion_grams": 200.0
+  },
+  {
+    "id": 98,
+    "name": "clam_chowder",
+    "region": "international",
+    "typical_portion_grams": 200.0
+  },
+  {
+    "id": 99,
+    "name": "beef_stew",
+    "region": "international",
+    "typical_portion_grams": 200.0
+  },
+  {
+    "id": 100,
+    "name": "chicken_soup",
+    "region": "international",
+    "typical_portion_grams": 200.0
+  },
+  {
+    "id": 101,
+    "name": "tomato_soup",
+    "region": "international",
+    "typical_portion_grams": 200.0
+  },
+  {
+    "id": 102,
+    "name": "minestrone",
+    "region": "international",
+    "typical_portion_grams": 200.0
+  },
+  {
+    "id": 103,
+    "name": "ramen",
+    "region": "international",
+    "typical_portion_grams": 200.0
+  },
+  {
+    "id": 104,
+    "name": "pho",
+    "region": "international",
+    "typical_portion_grams": 200.0
+  },
+  {
+    "id": 105,
+    "name": "pad_thai",
+    "region": "international",
+    "typical_portion_grams": 200.0
+  },
+  {
+    "id": 106,
+    "name": "fried_rice_intl",
+    "region": "international",
+    "typical_portion_grams": 200.0
+  },
+  {
+    "id": 107,
+    "name": "spring_roll_intl",
+    "region": "international",
+    "typical_portion_grams": 200.0
+  },
+  {
+    "id": 108,
+    "name": "dim_sum",
+    "region": "international",
+    "typical_portion_grams": 200.0
+  },
+  {
+    "id": 109,
+    "name": "dumplings",
+    "region": "international",
+    "typical_portion_grams": 200.0
+  },
+  {
+    "id": 110,
+    "name": "miso_soup",
+    "region": "international",
+    "typical_portion_grams": 200.0
+  },
+  {
+    "id": 111,
+    "name": "sashimi",
+    "region": "international",
+    "typical_portion_grams": 200.0
+  },
+  {
+    "id": 112,
+    "name": "tempura",
+    "region": "international",
+    "typical_portion_grams": 200.0
+  },
+  {
+    "id": 113,
+    "name": "teriyaki_chicken",
+    "region": "international",
+    "typical_portion_grams": 200.0
+  },
+  {
+    "id": 114,
+    "name": "bibimbap",
+    "region": "international",
+    "typical_portion_grams": 200.0
+  },
+  {
+    "id": 115,
+    "name": "kimchi",
+    "region": "international",
+    "typical_portion_grams": 200.0
+  },
+  {
+    "id": 116,
+    "name": "bulgogi",
+    "region": "international",
+    "typical_portion_grams": 200.0
+  },
+  {
+    "id": 117,
+    "name": "paella",
+    "region": "international",
+    "typical_portion_grams": 200.0
+  },
+  {
+    "id": 118,
+    "name": "risotto",
+    "region": "international",
+    "typical_portion_grams": 200.0
+  },
+  {
+    "id": 119,
+    "name": "lasagna",
+    "region": "international",
+    "typical_portion_grams": 200.0
+  },
+  {
+    "id": 120,
+    "name": "carbonara",
+    "region": "international",
+    "typical_portion_grams": 200.0
+  },
+  {
+    "id": 121,
+    "name": "fettuccine_alfredo",
+    "region": "international",
+    "typical_portion_grams": 200.0
+  },
+  {
+    "id": 122,
+    "name": "tiramisu",
+    "region": "international",
+    "typical_portion_grams": 200.0
+  },
+  {
+    "id": 123,
+    "name": "gelato",
+    "region": "international",
+    "typical_portion_grams": 200.0
+  },
+  {
+    "id": 124,
+    "name": "croissant",
+    "region": "international",
+    "typical_portion_grams": 200.0
+  },
+  {
+    "id": 125,
+    "name": "baguette",
+    "region": "international",
+    "typical_portion_grams": 200.0
+  },
+  {
+    "id": 126,
+    "name": "crepe",
+    "region": "international",
+    "typical_portion_grams": 200.0
+  },
+  {
+    "id": 127,
+    "name": "quiche",
+    "region": "international",
+    "typical_portion_grams": 200.0
+  },
+  {
+    "id": 128,
+    "name": "ratatouille",
+    "region": "international",
+    "typical_portion_grams": 200.0
+  },
+  {
+    "id": 129,
+    "name": "couscous",
+    "region": "international",
+    "typical_portion_grams": 200.0
+  },
+  {
+    "id": 130,
+    "name": "hummus",
+    "region": "international",
+    "typical_portion_grams": 200.0
+  },
+  {
+    "id": 131,
+    "name": "falafel",
+    "region": "international",
+    "typical_portion_grams": 200.0
+  },
+  {
+    "id": 132,
+    "name": "kebab",
+    "region": "international",
+    "typical_portion_grams": 200.0
+  },
+  {
+    "id": 133,
+    "name": "shawarma_intl",
+    "region": "international",
+    "typical_portion_grams": 200.0
+  },
+  {
+    "id": 134,
+    "name": "baklava",
+    "region": "international",
+    "typical_portion_grams": 200.0
+  },
+  {
+    "id": 135,
+    "name": "moussaka",
+    "region": "international",
+    "typical_portion_grams": 200.0
+  },
+  {
+    "id": 136,
+    "name": "tzatziki",
+    "region": "international",
+    "typical_portion_grams": 200.0
+  },
+  {
+    "id": 137,
+    "name": "gyros",
+    "region": "international",
+    "typical_portion_grams": 200.0
+  },
+  {
+    "id": 138,
+    "name": "souvlaki",
+    "region": "international",
+    "typical_portion_grams": 200.0
+  },
+  {
+    "id": 139,
+    "name": "pierogi",
+    "region": "international",
+    "typical_portion_grams": 200.0
+  },
+  {
+    "id": 140,
+    "name": "borscht",
+    "region": "international",
+    "typical_portion_grams": 200.0
+  },
+  {
+    "id": 141,
+    "name": "stroganoff",
+    "region": "international",
+    "typical_portion_grams": 200.0
+  },
+  {
+    "id": 142,
+    "name": "goulash",
+    "region": "international",
+    "typical_portion_grams": 200.0
+  },
+  {
+    "id": 143,
+    "name": "schnitzel",
+    "region": "international",
+    "typical_portion_grams": 200.0
+  },
+  {
+    "id": 144,
+    "name": "bratwurst",
+    "region": "international",
+    "typical_portion_grams": 200.0
+  },
+  {
+    "id": 145,
+    "name": "pretzel",
+    "region": "international",
+    "typical_portion_grams": 200.0
+  },
+  {
+    "id": 146,
+    "name": "black_forest_cake",
+    "region": "international",
+    "typical_portion_grams": 200.0
+  },
+  {
+    "id": 147,
+    "name": "apple_strudel",
+    "region": "international",
+    "typical_portion_grams": 200.0
+  },
+  {
+    "id": 148,
+    "name": "fish_and_chips",
+    "region": "international",
+    "typical_portion_grams": 200.0
+  },
+  {
+    "id": 149,
+    "name": "bangers_and_mash",
+    "region": "international",
+    "typical_portion_grams": 200.0
+  },
+  {
+    "id": 150,
+    "name": "cornish_pasty",
+    "region": "international",
+    "typical_portion_grams": 200.0
+  },
+  {
+    "id": 151,
+    "name": "shepherd_pie",
+    "region": "international",
+    "typical_portion_grams": 200.0
+  },
+  {
+    "id": 152,
+    "name": "scones",
+    "region": "international",
+    "typical_portion_grams": 200.0
+  },
+  {
+    "id": 153,
+    "name": "treacle_tart",
+    "region": "international",
+    "typical_portion_grams": 200.0
+  },
+  {
+    "id": 154,
+    "name": "haggis",
+    "region": "international",
+    "typical_portion_grams": 200.0
+  },
+  {
+    "id": 155,
+    "name": "scotch_broth",
+    "region": "international",
+    "typical_portion_grams": 200.0
+  },
+  {
+    "id": 156,
+    "name": "smoked_salmon",
+    "region": "international",
+    "typical_portion_grams": 200.0
+  },
+  {
+    "id": 157,
+    "name": "crumpets",
+    "region": "international",
+    "typical_portion_grams": 200.0
+  },
+  {
+    "id": 158,
+    "name": "victoria_sponge",
+    "region": "international",
+    "typical_portion_grams": 200.0
+  },
+  {
+    "id": 159,
+    "name": "chicken_tikka_masala",
+    "region": "international",
+    "typical_portion_grams": 200.0
+  },
+  {
+    "id": 160,
+    "name": "butter_chicken",
+    "region": "international",
+    "typical_portion_grams": 200.0
+  },
+  {
+    "id": 161,
+    "name": "biryani",
+    "region": "international",
+    "typical_portion_grams": 200.0
+  },
+  {
+    "id": 162,
+    "name": "naan",
+    "region": "international",
+    "typical_portion_grams": 200.0
+  },
+  {
+    "id": 163,
+    "name": "samosa_intl",
+    "region": "international",
+    "typical_portion_grams": 200.0
+  },
+  {
+    "id": 164,
+    "name": "dal",
+    "region": "international",
+    "typical_portion_grams": 200.0
+  },
+  {
+    "id": 165,
+    "name": "palak_paneer",
+    "region": "international",
+    "typical_portion_grams": 200.0
+  },
+  {
+    "id": 166,
+    "name": "gulab_jamun",
+    "region": "international",
+    "typical_portion_grams": 200.0
+  },
+  {
+    "id": 167,
+    "name": "kheer",
+    "region": "international",
+    "typical_portion_grams": 200.0
+  },
+  {
+    "id": 168,
+    "name": "chapati",
+    "region": "international",
+    "typical_portion_grams": 200.0
+  },
+  {
+    "id": 169,
+    "name": "idli",
+    "region": "international",
+    "typical_portion_grams": 200.0
+  },
+  {
+    "id": 170,
+    "name": "dosa",
+    "region": "international",
+    "typical_portion_grams": 200.0
+  },
+  {
+    "id": 171,
+    "name": "upma",
+    "region": "international",
+    "typical_portion_grams": 200.0
+  },
+  {
+    "id": 172,
+    "name": "vada",
+    "region": "international",
+    "typical_portion_grams": 200.0
+  },
+  {
+    "id": 173,
+    "name": "rasam",
+    "region": "international",
+    "typical_portion_grams": 200.0
+  },
+  {
+    "id": 174,
+    "name": "chole_bhature",
+    "region": "international",
+    "typical_portion_grams": 200.0
+  },
+  {
+    "id": 175,
+    "name": "pav_bhaji",
+    "region": "international",
+    "typical_portion_grams": 200.0
+  },
+  {
+    "id": 176,
+    "name": "chaat",
+    "region": "international",
+    "typical_portion_grams": 200.0
+  },
+  {
+    "id": 177,
+    "name": "pani_puri",
+    "region": "international",
+    "typical_portion_grams": 200.0
+  },
+  {
+    "id": 178,
+    "name": "paratha",
+    "region": "international",
+    "typical_portion_grams": 200.0
+  },
+  {
+    "id": 179,
+    "name": "aloo_gobi",
+    "region": "international",
+    "typical_portion_grams": 200.0
+  },
+  {
+    "id": 180,
+    "name": "saag",
+    "region": "international",
+    "typical_portion_grams": 200.0
+  },
+  {
+    "id": 181,
+    "name": "vindaloo",
+    "region": "international",
+    "typical_portion_grams": 200.0
+  },
+  {
+    "id": 182,
+    "name": "lamb_korma",
+    "region": "international",
+    "typical_portion_grams": 200.0
+  },
+  {
+    "id": 183,
+    "name": "tandoori_chicken",
+    "region": "international",
+    "typical_portion_grams": 200.0
+  },
+  {
+    "id": 184,
+    "name": "mango_lassi",
+    "region": "international",
+    "typical_portion_grams": 200.0
+  },
+  {
+    "id": 185,
+    "name": "masala_chai",
+    "region": "international",
+    "typical_portion_grams": 200.0
+  },
+  {
+    "id": 186,
+    "name": "jerk_chicken",
+    "region": "international",
+    "typical_portion_grams": 200.0
+  },
+  {
+    "id": 187,
+    "name": "rice_and_peas",
+    "region": "international",
+    "typical_portion_grams": 200.0
+  },
+  {
+    "id": 188,
+    "name": "ackee_and_saltfish",
+    "region": "international",
+    "typical_portion_grams": 200.0
+  },
+  {
+    "id": 189,
+    "name": "curry_goat",
+    "region": "international",
+    "typical_portion_grams": 200.0
+  },
+  {
+    "id": 190,
+    "name": "callaloo",
+    "region": "international",
+    "typical_portion_grams": 200.0
+  },
+  {
+    "id": 191,
+    "name": "plantain_intl",
+    "region": "international",
+    "typical_portion_grams": 200.0
+  },
+  {
+    "id": 192,
+    "name": "oxtail_stew",
+    "region": "international",
+    "typical_portion_grams": 200.0
+  },
+  {
+    "id": 193,
+    "name": "cornbread",
+    "region": "international",
+    "typical_portion_grams": 200.0
+  },
+  {
+    "id": 194,
+    "name": "collard_greens",
+    "region": "international",
+    "typical_portion_grams": 200.0
+  },
+  {
+    "id": 195,
+    "name": "mac_and_cheese",
+    "region": "international",
+    "typical_portion_grams": 200.0
+  },
+  {
+    "id": 196,
+    "name": "fried_catfish",
+    "region": "international",
+    "typical_portion_grams": 200.0
+  },
+  {
+    "id": 197,
+    "name": "hush_puppies",
+    "region": "international",
+    "typical_portion_grams": 200.0
+  },
+  {
+    "id": 198,
+    "name": "peach_cobbler",
+    "region": "international",
+    "typical_portion_grams": 200.0
+  },
+  {
+    "id": 199,
+    "name": "biscuits_and_gravy",
+    "region": "international",
+    "typical_portion_grams": 200.0
+  },
+  {
+    "id": 200,
+    "name": "bbq_ribs",
+    "region": "international",
+    "typical_portion_grams": 200.0
+  },
+  {
+    "id": 201,
+    "name": "pulled_pork",
+    "region": "international",
+    "typical_portion_grams": 200.0
+  },
+  {
+    "id": 202,
+    "name": "coleslaw_intl",
+    "region": "international",
+    "typical_portion_grams": 200.0
+  },
+  {
+    "id": 203,
+    "name": "potato_salad",
+    "region": "international",
+    "typical_portion_grams": 200.0
+  },
+  {
+    "id": 204,
+    "name": "banana_bread",
+    "region": "international",
+    "typical_portion_grams": 200.0
+  },
+  {
+    "id": 205,
+    "name": "pancakes",
+    "region": "international",
+    "typical_portion_grams": 200.0
+  },
+  {
+    "id": 206,
+    "name": "waffles",
+    "region": "international",
+    "typical_portion_grams": 200.0
+  },
+  {
+    "id": 207,
+    "name": "french_toast",
+    "region": "international",
+    "typical_portion_grams": 200.0
+  },
+  {
+    "id": 208,
+    "name": "eggs_benedict",
+    "region": "international",
+    "typical_portion_grams": 200.0
+  },
+  {
+    "id": 209,
+    "name": "omelette",
+    "region": "international",
+    "typical_portion_grams": 200.0
+  },
+  {
+    "id": 210,
+    "name": "breakfast_burrito",
+    "region": "international",
+    "typical_portion_grams": 200.0
+  },
+  {
+    "id": 211,
+    "name": "avocado_toast",
+    "region": "international",
+    "typical_portion_grams": 200.0
+  },
+  {
+    "id": 212,
+    "name": "smoothie_bowl",
+    "region": "international",
+    "typical_portion_grams": 200.0
+  },
+  {
+    "id": 213,
+    "name": "granola",
+    "region": "international",
+    "typical_portion_grams": 200.0
+  },
+  {
+    "id": 214,
+    "name": "yogurt_parfait",
+    "region": "international",
+    "typical_portion_grams": 200.0
+  },
+  {
+    "id": 215,
+    "name": "chocolate_cake",
+    "region": "international",
+    "typical_portion_grams": 120.0
+  },
+  {
+    "id": 216,
+    "name": "vanilla_ice_cream",
+    "region": "international",
+    "typical_portion_grams": 150.0
+  },
+  {
+    "id": 217,
+    "name": "cheesecake",
+    "region": "international",
+    "typical_portion_grams": 130.0
+  },
+  {
+    "id": 218,
+    "name": "apple_pie",
+    "region": "international",
+    "typical_portion_grams": 200.0
+  },
+  {
+    "id": 219,
+    "name": "brownies",
+    "region": "international",
+    "typical_portion_grams": 200.0
+  },
+  {
+    "id": 220,
+    "name": "cookies",
+    "region": "international",
+    "typical_portion_grams": 200.0
+  },
+  {
+    "id": 221,
+    "name": "doughnuts",
+    "region": "international",
+    "typical_portion_grams": 200.0
+  },
+  {
+    "id": 222,
+    "name": "muffins",
+    "region": "international",
+    "typical_portion_grams": 200.0
+  },
+  {
+    "id": 223,
+    "name": "cupcakes",
+    "region": "international",
+    "typical_portion_grams": 200.0
+  },
+  {
+    "id": 224,
+    "name": "macarons",
+    "region": "international",
+    "typical_portion_grams": 200.0
+  },
+  {
+    "id": 225,
+    "name": "eclairs",
+    "region": "international",
+    "typical_portion_grams": 200.0
+  },
+  {
+    "id": 226,
+    "name": "churros",
+    "region": "international",
+    "typical_portion_grams": 200.0
+  },
+  {
+    "id": 227,
+    "name": "sopapillas",
+    "region": "international",
+    "typical_portion_grams": 200.0
+  },
+  {
+    "id": 228,
+    "name": "tres_leches",
+    "region": "international",
+    "typical_portion_grams": 200.0
+  },
+  {
+    "id": 229,
+    "name": "flan",
+    "region": "international",
+    "typical_portion_grams": 200.0
+  },
+  {
+    "id": 230,
+    "name": "empanadas",
+    "region": "international",
+    "typical_portion_grams": 200.0
+  },
+  {
+    "id": 231,
+    "name": "ceviche",
+    "region": "international",
+    "typical_portion_grams": 200.0
+  },
+  {
+    "id": 232,
+    "name": "lomo_saltado",
+    "region": "international",
+    "typical_portion_grams": 200.0
+  },
+  {
+    "id": 233,
+    "name": "arepas",
+    "region": "international",
+    "typical_portion_grams": 200.0
+  },
+  {
+    "id": 234,
+    "name": "tamales",
+    "region": "international",
+    "typical_portion_grams": 200.0
+  },
+  {
+    "id": 235,
+    "name": "enchiladas",
+    "region": "international",
+    "typical_portion_grams": 200.0
+  },
+  {
+    "id": 236,
+    "name": "pozole",
+    "region": "international",
+    "typical_portion_grams": 200.0
+  },
+  {
+    "id": 237,
+    "name": "chiles_rellenos",
+    "region": "international",
+    "typical_portion_grams": 200.0
+  },
+  {
+    "id": 238,
+    "name": "mole",
+    "region": "international",
+    "typical_portion_grams": 200.0
+  },
+  {
+    "id": 239,
+    "name": "guacamole",
+    "region": "international",
+    "typical_portion_grams": 200.0
+  },
+  {
+    "id": 240,
+    "name": "pico_de_gallo",
+    "region": "international",
+    "typical_portion_grams": 200.0
+  },
+  {
+    "id": 241,
+    "name": "nachos",
+    "region": "international",
+    "typical_portion_grams": 200.0
+  },
+  {
+    "id": 242,
+    "name": "quesadilla",
+    "region": "international",
+    "typical_portion_grams": 200.0
+  },
+  {
+    "id": 243,
+    "name": "chimichanga",
+    "region": "international",
+    "typical_portion_grams": 200.0
+  },
+  {
+    "id": 244,
+    "name": "burritos",
+    "region": "international",
+    "typical_portion_grams": 200.0
+  },
+  {
+    "id": 245,
+    "name": "tostadas",
+    "region": "international",
+    "typical_portion_grams": 200.0
+  },
+  {
+    "id": 246,
+    "name": "elotes",
+    "region": "international",
+    "typical_portion_grams": 200.0
+  },
+  {
+    "id": 247,
+    "name": "atole",
+    "region": "international",
+    "typical_portion_grams": 200.0
+  },
+  {
+    "id": 248,
+    "name": "horchata",
+    "region": "international",
+    "typical_portion_grams": 200.0
+  },
+  {
+    "id": 249,
+    "name": "agua_fresca",
+    "region": "international",
+    "typical_portion_grams": 200.0
+  },
+  {
+    "id": 250,
+    "name": "tom_yum",
+    "region": "international",
+    "typical_portion_grams": 200.0
+  },
+  {
+    "id": 251,
+    "name": "green_curry",
+    "region": "international",
+    "typical_portion_grams": 200.0
+  },
+  {
+    "id": 252,
+    "name": "massaman_curry",
+    "region": "international",
+    "typical_portion_grams": 200.0
+  },
+  {
+    "id": 253,
+    "name": "som_tam",
+    "region": "international",
+    "typical_portion_grams": 200.0
+  },
+  {
+    "id": 254,
+    "name": "larb",
+    "region": "international",
+    "typical_portion_grams": 200.0
+  },
+  {
+    "id": 255,
+    "name": "mango_sticky_rice",
+    "region": "international",
+    "typical_portion_grams": 200.0
+  },
+  {
+    "id": 256,
+    "name": "satay",
+    "region": "international",
+    "typical_portion_grams": 200.0
+  },
+  {
+    "id": 257,
+    "name": "nasi_goreng",
+    "region": "international",
+    "typical_portion_grams": 200.0
+  },
+  {
+    "id": 258,
+    "name": "rendang",
+    "region": "international",
+    "typical_portion_grams": 200.0
+  },
+  {
+    "id": 259,
+    "name": "gado_gado",
+    "region": "international",
+    "typical_portion_grams": 200.0
+  },
+  {
+    "id": 260,
+    "name": "laksa",
+    "region": "international",
+    "typical_portion_grams": 200.0
+  },
+  {
+    "id": 261,
+    "name": "char_kway_teow",
+    "region": "international",
+    "typical_portion_grams": 200.0
+  },
+  {
+    "id": 262,
+    "name": "hainanese_chicken",
+    "region": "international",
+    "typical_portion_grams": 200.0
+  },
+  {
+    "id": 263,
+    "name": "bak_kut_teh",
+    "region": "international",
+    "typical_portion_grams": 200.0
+  },
+  {
+    "id": 264,
+    "name": "chili_crab",
+    "region": "international",
+    "typical_portion_grams": 200.0
+  },
+  {
+    "id": 265,
+    "name": "rojak",
+    "region": "international",
+    "typical_portion_grams": 200.0
+  },
+  {
+    "id": 266,
+    "name": "peking_duck",
+    "region": "international",
+    "typical_portion_grams": 200.0
+  },
+  {
+    "id": 267,
+    "name": "mapo_tofu",
+    "region": "international",
+    "typical_portion_grams": 200.0
+  },
+  {
+    "id": 268,
+    "name": "kung_pao_chicken",
+    "region": "international",
+    "typical_portion_grams": 200.0
+  },
+  {
+    "id": 269,
+    "name": "sweet_and_sour_pork",
+    "region": "international",
+    "typical_portion_grams": 200.0
+  },
+  {
+    "id": 270,
+    "name": "hot_pot",
+    "region": "international",
+    "typical_portion_grams": 200.0
+  },
+  {
+    "id": 271,
+    "name": "xiaolongbao",
+    "region": "international",
+    "typical_portion_grams": 200.0
+  },
+  {
+    "id": 272,
+    "name": "baozi",
+    "region": "international",
+    "typical_portion_grams": 200.0
+  },
+  {
+    "id": 273,
+    "name": "jianbing",
+    "region": "international",
+    "typical_portion_grams": 200.0
+  },
+  {
+    "id": 274,
+    "name": "zongzi",
+    "region": "international",
+    "typical_portion_grams": 200.0
+  },
+  {
+    "id": 275,
+    "name": "wontons",
+    "region": "international",
+    "typical_portion_grams": 200.0
+  },
+  {
+    "id": 276,
+    "name": "congee",
+    "region": "international",
+    "typical_portion_grams": 200.0
+  },
+  {
+    "id": 277,
+    "name": "lo_mein",
+    "region": "international",
+    "typical_portion_grams": 200.0
+  },
+  {
+    "id": 278,
+    "name": "chow_mein",
+    "region": "international",
+    "typical_portion_grams": 200.0
+  },
+  {
+    "id": 279,
+    "name": "beef_and_broccoli",
+    "region": "international",
+    "typical_portion_grams": 200.0
+  },
+  {
+    "id": 280,
+    "name": "egg_fried_rice",
+    "region": "international",
+    "typical_portion_grams": 200.0
+  },
+  {
+    "id": 281,
+    "name": "spring_rolls_intl",
+    "region": "international",
+    "typical_portion_grams": 200.0
+  },
+  {
+    "id": 282,
+    "name": "sesame_chicken",
+    "region": "international",
+    "typical_portion_grams": 200.0
+  },
+  {
+    "id": 283,
+    "name": "general_tso_chicken",
+    "region": "international",
+    "typical_portion_grams": 200.0
+  },
+  {
+    "id": 284,
+    "name": "moo_shu_pork",
+    "region": "international",
+    "typical_portion_grams": 200.0
+  },
+  {
+    "id": 285,
+    "name": "beef_chow_fun",
+    "region": "international",
+    "typical_portion_grams": 200.0
+  },
+  {
+    "id": 286,
+    "name": "roast_duck",
+    "region": "international",
+    "typical_portion_grams": 200.0
+  },
+  {
+    "id": 287,
+    "name": "tanghulu",
+    "region": "international",
+    "typical_portion_grams": 200.0
+  },
+  {
+    "id": 288,
+    "name": "mooncake",
+    "region": "international",
+    "typical_portion_grams": 200.0
+  },
+  {
+    "id": 289,
+    "name": "red_bean_soup",
+    "region": "international",
+    "typical_portion_grams": 200.0
+  },
+  {
+    "id": 290,
+    "name": "tong_sui",
+    "region": "international",
+    "typical_portion_grams": 200.0
+  },
+  {
+    "id": 291,
+    "name": "bubble_tea",
+    "region": "international",
+    "typical_portion_grams": 200.0
+  },
+  {
+    "id": 292,
+    "name": "matcha_latte",
+    "region": "international",
+    "typical_portion_grams": 200.0
+  },
+  {
+    "id": 293,
+    "name": "green_tea_ice_cream",
+    "region": "international",
+    "typical_portion_grams": 200.0
+  }
+]

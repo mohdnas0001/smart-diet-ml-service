@@ -1,0 +1,554 @@
+{
+  "jollof_rice": {
+    "mean_grams": 350,
+    "std_grams": 80,
+    "min_grams": 150,
+    "max_grams": 600
+  },
+  "fried_rice": {
+    "mean_grams": 350,
+    "std_grams": 80,
+    "min_grams": 150,
+    "max_grams": 600
+  },
+  "ofada_rice": {
+    "mean_grams": 300,
+    "std_grams": 70,
+    "min_grams": 150,
+    "max_grams": 550
+  },
+  "coconut_rice": {
+    "mean_grams": 330,
+    "std_grams": 75,
+    "min_grams": 150,
+    "max_grams": 580
+  },
+  "tuwo_shinkafa": {
+    "mean_grams": 300,
+    "std_grams": 60,
+    "min_grams": 150,
+    "max_grams": 500
+  },
+  "egusi_soup": {
+    "mean_grams": 250,
+    "std_grams": 60,
+    "min_grams": 100,
+    "max_grams": 450
+  },
+  "ogbono_soup": {
+    "mean_grams": 250,
+    "std_grams": 60,
+    "min_grams": 100,
+    "max_grams": 450
+  },
+  "pepper_soup": {
+    "mean_grams": 300,
+    "std_grams": 70,
+    "min_grams": 150,
+    "max_grams": 500
+  },
+  "efo_riro": {
+    "mean_grams": 220,
+    "std_grams": 55,
+    "min_grams": 100,
+    "max_grams": 400
+  },
+  "afang_soup": {
+    "mean_grams": 230,
+    "std_grams": 55,
+    "min_grams": 100,
+    "max_grams": 420
+  },
+  "edikang_ikong": {
+    "mean_grams": 230,
+    "std_grams": 55,
+    "min_grams": 100,
+    "max_grams": 420
+  },
+  "groundnut_soup": {
+    "mean_grams": 240,
+    "std_grams": 60,
+    "min_grams": 100,
+    "max_grams": 440
+  },
+  "banga_soup": {
+    "mean_grams": 240,
+    "std_grams": 60,
+    "min_grams": 100,
+    "max_grams": 440
+  },
+  "oha_soup": {
+    "mean_grams": 230,
+    "std_grams": 55,
+    "min_grams": 100,
+    "max_grams": 420
+  },
+  "nsala_soup": {
+    "mean_grams": 280,
+    "std_grams": 65,
+    "min_grams": 150,
+    "max_grams": 480
+  },
+  "gbegiri": {
+    "mean_grams": 200,
+    "std_grams": 50,
+    "min_grams": 100,
+    "max_grams": 380
+  },
+  "ewedu": {
+    "mean_grams": 200,
+    "std_grams": 50,
+    "min_grams": 100,
+    "max_grams": 380
+  },
+  "miyan_kuka": {
+    "mean_grams": 220,
+    "std_grams": 55,
+    "min_grams": 100,
+    "max_grams": 400
+  },
+  "okra_soup": {
+    "mean_grams": 230,
+    "std_grams": 55,
+    "min_grams": 100,
+    "max_grams": 420
+  },
+  "pounded_yam": {
+    "mean_grams": 350,
+    "std_grams": 80,
+    "min_grams": 150,
+    "max_grams": 600
+  },
+  "amala": {
+    "mean_grams": 300,
+    "std_grams": 70,
+    "min_grams": 150,
+    "max_grams": 550
+  },
+  "eba": {
+    "mean_grams": 300,
+    "std_grams": 70,
+    "min_grams": 150,
+    "max_grams": 550
+  },
+  "fufu": {
+    "mean_grams": 280,
+    "std_grams": 65,
+    "min_grams": 150,
+    "max_grams": 500
+  },
+  "semovita": {
+    "mean_grams": 280,
+    "std_grams": 65,
+    "min_grams": 150,
+    "max_grams": 500
+  },
+  "wheat_meal": {
+    "mean_grams": 280,
+    "std_grams": 65,
+    "min_grams": 150,
+    "max_grams": 500
+  },
+  "tuwo_masara": {
+    "mean_grams": 300,
+    "std_grams": 70,
+    "min_grams": 150,
+    "max_grams": 550
+  },
+  "starch": {
+    "mean_grams": 300,
+    "std_grams": 70,
+    "min_grams": 150,
+    "max_grams": 550
+  },
+  "suya": {
+    "mean_grams": 120,
+    "std_grams": 35,
+    "min_grams": 50,
+    "max_grams": 300
+  },
+  "kilishi": {
+    "mean_grams": 80,
+    "std_grams": 25,
+    "min_grams": 30,
+    "max_grams": 200
+  },
+  "nkwobi": {
+    "mean_grams": 200,
+    "std_grams": 55,
+    "min_grams": 100,
+    "max_grams": 380
+  },
+  "peppered_snail": {
+    "mean_grams": 180,
+    "std_grams": 50,
+    "min_grams": 80,
+    "max_grams": 350
+  },
+  "isi_ewu": {
+    "mean_grams": 200,
+    "std_grams": 55,
+    "min_grams": 100,
+    "max_grams": 380
+  },
+  "asun": {
+    "mean_grams": 150,
+    "std_grams": 45,
+    "min_grams": 70,
+    "max_grams": 320
+  },
+  "grilled_fish": {
+    "mean_grams": 200,
+    "std_grams": 60,
+    "min_grams": 100,
+    "max_grams": 400
+  },
+  "fried_fish": {
+    "mean_grams": 180,
+    "std_grams": 55,
+    "min_grams": 80,
+    "max_grams": 380
+  },
+  "peppered_turkey": {
+    "mean_grams": 200,
+    "std_grams": 55,
+    "min_grams": 100,
+    "max_grams": 400
+  },
+  "stockfish": {
+    "mean_grams": 80,
+    "std_grams": 25,
+    "min_grams": 30,
+    "max_grams": 200
+  },
+  "akara": {
+    "mean_grams": 150,
+    "std_grams": 40,
+    "min_grams": 60,
+    "max_grams": 300
+  },
+  "moin_moin": {
+    "mean_grams": 200,
+    "std_grams": 55,
+    "min_grams": 80,
+    "max_grams": 400
+  },
+  "chin_chin": {
+    "mean_grams": 80,
+    "std_grams": 25,
+    "min_grams": 30,
+    "max_grams": 200
+  },
+  "puff_puff": {
+    "mean_grams": 120,
+    "std_grams": 35,
+    "min_grams": 50,
+    "max_grams": 250
+  },
+  "boli": {
+    "mean_grams": 180,
+    "std_grams": 50,
+    "min_grams": 80,
+    "max_grams": 350
+  },
+  "fried_plantain": {
+    "mean_grams": 150,
+    "std_grams": 45,
+    "min_grams": 60,
+    "max_grams": 320
+  },
+  "dundun": {
+    "mean_grams": 180,
+    "std_grams": 50,
+    "min_grams": 80,
+    "max_grams": 360
+  },
+  "ojojo": {
+    "mean_grams": 120,
+    "std_grams": 35,
+    "min_grams": 50,
+    "max_grams": 250
+  },
+  "kokoro": {
+    "mean_grams": 60,
+    "std_grams": 20,
+    "min_grams": 20,
+    "max_grams": 150
+  },
+  "kulikuli": {
+    "mean_grams": 50,
+    "std_grams": 15,
+    "min_grams": 20,
+    "max_grams": 130
+  },
+  "zobo": {
+    "mean_grams": 350,
+    "std_grams": 80,
+    "min_grams": 150,
+    "max_grams": 600
+  },
+  "kunu": {
+    "mean_grams": 350,
+    "std_grams": 80,
+    "min_grams": 150,
+    "max_grams": 600
+  },
+  "fura_da_nono": {
+    "mean_grams": 250,
+    "std_grams": 65,
+    "min_grams": 100,
+    "max_grams": 500
+  },
+  "palm_wine": {
+    "mean_grams": 300,
+    "std_grams": 75,
+    "min_grams": 150,
+    "max_grams": 600
+  },
+  "tiger_nut_milk": {
+    "mean_grams": 300,
+    "std_grams": 75,
+    "min_grams": 150,
+    "max_grams": 600
+  },
+  "ewa_riro": {
+    "mean_grams": 250,
+    "std_grams": 65,
+    "min_grams": 100,
+    "max_grams": 480
+  },
+  "beans_and_dodo": {
+    "mean_grams": 350,
+    "std_grams": 80,
+    "min_grams": 150,
+    "max_grams": 600
+  },
+  "ewa_agoyin": {
+    "mean_grams": 280,
+    "std_grams": 70,
+    "min_grams": 100,
+    "max_grams": 550
+  },
+  "porridge_yam": {
+    "mean_grams": 320,
+    "std_grams": 75,
+    "min_grams": 150,
+    "max_grams": 580
+  },
+  "plantain_porridge": {
+    "mean_grams": 320,
+    "std_grams": 75,
+    "min_grams": 150,
+    "max_grams": 580
+  },
+  "yam_porridge": {
+    "mean_grams": 320,
+    "std_grams": 75,
+    "min_grams": 150,
+    "max_grams": 580
+  },
+  "ekpang_nkukwo": {
+    "mean_grams": 280,
+    "std_grams": 70,
+    "min_grams": 120,
+    "max_grams": 520
+  },
+  "abacha": {
+    "mean_grams": 200,
+    "std_grams": 55,
+    "min_grams": 80,
+    "max_grams": 380
+  },
+  "ukwa": {
+    "mean_grams": 220,
+    "std_grams": 55,
+    "min_grams": 80,
+    "max_grams": 400
+  },
+  "agidi": {
+    "mean_grams": 200,
+    "std_grams": 50,
+    "min_grams": 80,
+    "max_grams": 380
+  },
+  "ogi_pap": {
+    "mean_grams": 300,
+    "std_grams": 75,
+    "min_grams": 150,
+    "max_grams": 600
+  },
+  "masa": {
+    "mean_grams": 180,
+    "std_grams": 50,
+    "min_grams": 80,
+    "max_grams": 360
+  },
+  "waina": {
+    "mean_grams": 180,
+    "std_grams": 50,
+    "min_grams": 80,
+    "max_grams": 360
+  },
+  "kosai": {
+    "mean_grams": 150,
+    "std_grams": 40,
+    "min_grams": 60,
+    "max_grams": 320
+  },
+  "dan_wake": {
+    "mean_grams": 250,
+    "std_grams": 65,
+    "min_grams": 100,
+    "max_grams": 480
+  },
+  "miyan_taushe": {
+    "mean_grams": 230,
+    "std_grams": 60,
+    "min_grams": 100,
+    "max_grams": 450
+  },
+  "ofe_akwu": {
+    "mean_grams": 250,
+    "std_grams": 65,
+    "min_grams": 100,
+    "max_grams": 480
+  },
+  "ugba": {
+    "mean_grams": 150,
+    "std_grams": 45,
+    "min_grams": 60,
+    "max_grams": 320
+  },
+  "achicha": {
+    "mean_grams": 200,
+    "std_grams": 55,
+    "min_grams": 80,
+    "max_grams": 400
+  },
+  "okpa": {
+    "mean_grams": 200,
+    "std_grams": 55,
+    "min_grams": 80,
+    "max_grams": 400
+  },
+  "garden_egg_sauce": {
+    "mean_grams": 150,
+    "std_grams": 45,
+    "min_grams": 60,
+    "max_grams": 320
+  },
+  "catfish_pepper_soup": {
+    "mean_grams": 300,
+    "std_grams": 75,
+    "min_grams": 150,
+    "max_grams": 550
+  },
+  "goat_meat_pepper_soup": {
+    "mean_grams": 300,
+    "std_grams": 75,
+    "min_grams": 150,
+    "max_grams": 550
+  },
+  "cow_foot": {
+    "mean_grams": 180,
+    "std_grams": 50,
+    "min_grams": 80,
+    "max_grams": 360
+  },
+  "ponmo": {
+    "mean_grams": 100,
+    "std_grams": 30,
+    "min_grams": 40,
+    "max_grams": 220
+  },
+  "shaki": {
+    "mean_grams": 120,
+    "std_grams": 35,
+    "min_grams": 50,
+    "max_grams": 250
+  },
+  "dodo_ikire": {
+    "mean_grams": 100,
+    "std_grams": 30,
+    "min_grams": 40,
+    "max_grams": 220
+  },
+  "ila_asepo": {
+    "mean_grams": 220,
+    "std_grams": 55,
+    "min_grams": 100,
+    "max_grams": 420
+  },
+  "ayamase_stew": {
+    "mean_grams": 150,
+    "std_grams": 45,
+    "min_grams": 60,
+    "max_grams": 320
+  },
+  "ofada_stew": {
+    "mean_grams": 150,
+    "std_grams": 45,
+    "min_grams": 60,
+    "max_grams": 320
+  },
+  "bitterleaf_soup": {
+    "mean_grams": 230,
+    "std_grams": 60,
+    "min_grams": 100,
+    "max_grams": 450
+  },
+  "grilled_chicken": {
+    "mean_grams": 200,
+    "std_grams": 60,
+    "min_grams": 80,
+    "max_grams": 400
+  },
+  "fried_chicken": {
+    "mean_grams": 200,
+    "std_grams": 60,
+    "min_grams": 80,
+    "max_grams": 400
+  },
+  "indomie_noodles": {
+    "mean_grams": 200,
+    "std_grams": 50,
+    "min_grams": 85,
+    "max_grams": 400
+  },
+  "meat_pie": {
+    "mean_grams": 120,
+    "std_grams": 30,
+    "min_grams": 60,
+    "max_grams": 250
+  },
+  "fish_pie": {
+    "mean_grams": 120,
+    "std_grams": 30,
+    "min_grams": 60,
+    "max_grams": 250
+  },
+  "sausage_roll": {
+    "mean_grams": 80,
+    "std_grams": 25,
+    "min_grams": 40,
+    "max_grams": 180
+  },
+  "scotch_egg": {
+    "mean_grams": 100,
+    "std_grams": 30,
+    "min_grams": 50,
+    "max_grams": 220
+  },
+  "spring_roll": {
+    "mean_grams": 100,
+    "std_grams": 30,
+    "min_grams": 40,
+    "max_grams": 220
+  },
+  "nigerian_shawarma": {
+    "mean_grams": 280,
+    "std_grams": 70,
+    "min_grams": 150,
+    "max_grams": 500
+  }
+}
