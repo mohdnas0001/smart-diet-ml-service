@@ -14,17 +14,28 @@ class FoodClassifier:
     def __init__(self, model_path: str, food_categories_path: str):
         self.demo_mode = True
         self.model = None
+        self.trained_classes: List[str] = []  # class names in training order
         self._load_food_categories(food_categories_path)
         path = Path(model_path)
         if path.exists():
             try:
                 import torch
                 import timm
-                self.model = timm.create_model("efficientnet_b4", pretrained=False, num_classes=len(self.food_categories))
-                self.model.load_state_dict(torch.load(str(path), map_location="cpu", weights_only=True))
+                # Infer num_classes from the checkpoint to avoid shape mismatches
+                ckpt = torch.load(str(path), map_location="cpu", weights_only=True)
+                num_classes = ckpt["classifier.weight"].shape[0]
+                self.model = timm.create_model("efficientnet_b4", pretrained=False, num_classes=num_classes)
+                self.model.load_state_dict(ckpt)
                 self.model.eval()
                 self.demo_mode = False
-                logger.info("EfficientNet-B4 model loaded from %s", model_path)
+                # Load class names saved during training
+                classes_path = Path(model_path).parent / "classifier_classes.json"
+                if classes_path.exists():
+                    with open(classes_path) as f:
+                        self.trained_classes = json.load(f)
+                    logger.info("EfficientNet-B4 model loaded from %s (%d classes)", model_path, num_classes)
+                else:
+                    logger.warning("classifier_classes.json not found — predictions may use wrong labels")
             except Exception as exc:
                 logger.warning("Could not load classifier model: %s — running in demo mode", exc)
         else:
@@ -54,6 +65,17 @@ class FoodClassifier:
             logits = self.model(tensor)
             probs = torch.softmax(logits, dim=1)
             conf, idx = probs.max(1)
+        # Use trained class names if available, else fall back to food_categories
+        if self.trained_classes:
+            class_name = self.trained_classes[idx.item()]
+            # Try to find region from food_categories
+            region = "international"
+            for cat in self.food_categories:
+                if cat["name"] == class_name:
+                    region = cat.get("region", "international")
+                    break
+            return {"name": class_name, "confidence": float(conf.item()), "region": region}
+        # Fallback: use food_categories index (only correct if sizes match)
         cat = self.food_categories[idx.item()]
         return {"name": cat["name"], "confidence": float(conf.item()), "region": cat.get("region", "international")}
 

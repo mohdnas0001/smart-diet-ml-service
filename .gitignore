@@ -16,3 +16,6 @@ htmlcov/
 wandb/
 runs/
 *.log
+*.txt
+datasets/
+yolov8m.pt
