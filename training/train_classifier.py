@@ -35,7 +35,12 @@ def main():
     from training.dataset import FoodDataset
     from training.augmentation import get_train_transforms, get_val_transforms
 
-    device = torch.device("cuda" if torch.cuda.is_available() else "cpu")
+    if torch.cuda.is_available():
+        device = torch.device("cuda")
+    elif torch.backends.mps.is_available():
+        device = torch.device("mps")  # Apple Silicon GPU
+    else:
+        device = torch.device("cpu")
     print(f"Training on {device}")
 
     # Dataset
@@ -47,8 +52,10 @@ def main():
     num_classes = len(train_dataset.classes)
     print(f"Classes: {num_classes}")
 
-    train_loader = DataLoader(train_dataset, batch_size=args.batch_size, shuffle=True, num_workers=args.num_workers)
-    val_loader = DataLoader(val_dataset, batch_size=args.batch_size, shuffle=False, num_workers=args.num_workers)
+    # num_workers > 0 causes issues on macOS — use 0 to be safe
+    safe_workers = 0 if str(device) == "mps" else args.num_workers
+    train_loader = DataLoader(train_dataset, batch_size=args.batch_size, shuffle=True, num_workers=safe_workers)
+    val_loader = DataLoader(val_dataset, batch_size=args.batch_size, shuffle=False, num_workers=safe_workers)
 
     # Model
     model = timm.create_model("efficientnet_b4", pretrained=args.pretrained, num_classes=num_classes)
@@ -109,6 +116,10 @@ def main():
             best_val_acc = val_acc
             os.makedirs(args.output_dir, exist_ok=True)
             torch.save(model.state_dict(), f"{args.output_dir}/classifier.pt")
+            # Save class names so the app can map index → food name
+            import json
+            with open(f"{args.output_dir}/classifier_classes.json", "w") as f:
+                json.dump(train_dataset.classes, f, indent=2)
             print(f"  → Saved best model (val_acc={val_acc:.2f}%)")
 
     print(f"Training complete. Best Val Acc: {best_val_acc:.2f}%")

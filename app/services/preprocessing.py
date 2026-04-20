@@ -31,7 +31,9 @@ def preprocess_for_detection(image: Image.Image) -> np.ndarray:
 
 
 def preprocess_for_classification(image: Image.Image) -> np.ndarray:
-    """Preprocess image for EfficientNet-B4 classification."""
+    """Preprocess image for EfficientNet-B4 classification.
+    NOTE: Must match the img_size used during training (currently 224).
+    """
     image = fix_exif_rotation(image)
-    resized = resize_image(image, (380, 380))
+    resized = resize_image(image, (224, 224))
     return normalize_image(resized)
