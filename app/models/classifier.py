@@ -52,19 +52,36 @@ class FoodClassifier:
                 {"id": 3, "name": "fried_plantain", "region": "nigerian", "typical_portion_grams": 150},
             ]
 
-    def classify(self, image_array, detected_label: str = "") -> Dict[str, Any]:
+    def classify(self, image, detected_label: str = "") -> Dict[str, Any]:
         """
         Classify food image crop.
+        Accepts PIL Image or numpy array.
         Returns dict with keys: name, confidence, region.
         """
         if self.demo_mode:
             return self._demo_classify(detected_label)
         import torch
-        tensor = torch.tensor(image_array).unsqueeze(0)
+        import torchvision.transforms as transforms
+        from PIL import Image
+        
+        # Ensure we have a PIL Image
+        if not isinstance(image, Image.Image):
+            image = Image.fromarray(image)
+        
+        # Convert to tensor using standard ImageNet transforms
+        transform = transforms.Compose([
+            transforms.Resize((224, 224)),
+            transforms.ToTensor(),
+            transforms.Normalize(mean=[0.485, 0.456, 0.406],
+                                std=[0.229, 0.224, 0.225]),
+        ])
+        tensor = transform(image).unsqueeze(0)
+        
         with torch.no_grad():
             logits = self.model(tensor)
             probs = torch.softmax(logits, dim=1)
             conf, idx = probs.max(1)
+        
         # Use trained class names if available, else fall back to food_categories
         if self.trained_classes:
             class_name = self.trained_classes[idx.item()]

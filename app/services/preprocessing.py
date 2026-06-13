@@ -23,17 +23,20 @@ def normalize_image(image: Image.Image) -> np.ndarray:
     return arr.transpose(2, 0, 1)
 
 
-def preprocess_for_detection(image: Image.Image) -> np.ndarray:
-    """Preprocess image for YOLOv8 detection."""
+def preprocess_for_detection(image: Image.Image) -> Image.Image:
+    """Preprocess image for YOLOv8 detection.
+    YOLOv8 expects PIL Image or can convert from numpy array in (H, W, C) format.
+    Returns PIL Image in RGB mode, ready for YOLOv8.
+    """
     image = fix_exif_rotation(image)
     resized = resize_image(image, (640, 640))
-    return normalize_image(resized)
+    return resized
 
 
-def preprocess_for_classification(image: Image.Image) -> np.ndarray:
+def preprocess_for_classification(image: Image.Image) -> Image.Image:
     """Preprocess image for EfficientNet-B4 classification.
-    NOTE: Must match the img_size used during training (currently 224).
+    Returns PIL Image in RGB mode, ready for model.
     """
     image = fix_exif_rotation(image)
     resized = resize_image(image, (224, 224))
-    return normalize_image(resized)
+    return resized

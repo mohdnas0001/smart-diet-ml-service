@@ -1,0 +1,16 @@
+services:
+  - type: web
+    name: smart-diet-ml-service
+    env: docker
+    branch: main
+    autoDeploy: true
+    dockerfilePath: docker/Dockerfile
+    envVars:
+      - key: PORT
+        value: "8000"
+      - key: HOST
+        value: "0.0.0.0"
+      - key: DEBUG
+        value: "false"
+      - key: DEMO_MODE
+        value: "true"

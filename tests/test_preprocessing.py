@@ -34,5 +34,8 @@ def test_normalize_image_dtype():
 
 def test_preprocess_for_detection_shape():
     img = make_test_image(300, 200)
-    arr = preprocess_for_detection(img)
-    assert arr.shape == (3, 640, 640)
+    result = preprocess_for_detection(img)
+    # preprocess_for_detection now returns a PIL Image
+    assert isinstance(result, Image.Image)
+    assert result.size == (640, 640)
+    assert result.mode == "RGB"

@@ -3,6 +3,13 @@ from typing import List, Dict, Optional
 from app.schemas.common import FoodRegion
 
 
+class ErrorResponse(BaseModel):
+    status: str = "error"
+    error_code: Optional[str] = None
+    message: str
+    details: Optional[str] = None
+
+
 class BoundingBox(BaseModel):
     x: float
     y: float
@@ -105,6 +112,7 @@ class FoodItem(BaseModel):
 class AnalysisResponse(BaseModel):
     model_config = {"protected_namespaces": ()}
 
+    status: str = "success"
     analysis_id: str
     image_width: int
     image_height: int

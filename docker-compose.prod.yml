@@ -1,0 +1,110 @@
+version: '3.8'
+
+services:
+  # PostgreSQL Database (managed by backend)
+  postgres:
+    image: postgres:16-alpine
+    container_name: smart-diet-postgres
+    environment:
+      POSTGRES_DB: smart_diet
+      POSTGRES_USER: postgres
+      POSTGRES_PASSWORD: postgres
+    ports:
+      - "5432:5432"
+    volumes:
+      - postgres_data:/var/lib/postgresql/data
+    healthcheck:
+      test: ["CMD-SHELL", "pg_isready -U postgres"]
+      interval: 10s
+      timeout: 5s
+      retries: 5
+    restart: unless-stopped
+    networks:
+      - smart-diet
+
+  # ML Service (Food Detection & Nutrient Estimation)
+  ml-service:
+    build:
+      context: ./smart-diet-ml-service
+      dockerfile: docker/Dockerfile
+    container_name: smart-diet-ml-service
+    ports:
+      - "8000:8000"
+    env_file:
+      - ./smart-diet-ml-service/.env
+    environment:
+      PORT: 8000
+      HOST: 0.0.0.0
+      DEBUG: "false"
+      DEMO_MODE: "false"
+    healthcheck:
+      test: ["CMD", "curl", "-f", "http://localhost:8000/api/health"]
+      interval: 30s
+      timeout: 10s
+      retries: 3
+      start_period: 20s
+    restart: unless-stopped
+    networks:
+      - smart-diet
+    depends_on:
+      - postgres
+
+  # NestJS Backend API
+  backend:
+    build:
+      context: ./smart-diet-api-service
+      dockerfile: Dockerfile
+    container_name: smart-diet-backend
+    ports:
+      - "3000:3000"
+    environment:
+      NODE_ENV: production
+      PORT: 3000
+      DB_HOST: postgres
+      DB_PORT: 5432
+      DB_USERNAME: postgres
+      DB_PASSWORD: postgres
+      DB_DATABASE: smart_diet
+      DB_SYNCHRONIZE: "false"
+      DB_SSL: "false"
+      ML_SERVICE_URL: http://ml-service:8000
+      ML_ANALYSIS_ENDPOINT: /api/predict
+      ML_ANALYSIS_FILE_FIELD: file
+      ML_ANALYSIS_TIMEOUT_MS: 30000
+    env_file:
+      - ./smart-diet-api-service/.env
+    healthcheck:
+      test: ["CMD", "curl", "-f", "http://localhost:3000/health"]
+      interval: 30s
+      timeout: 10s
+      retries: 3
+      start_period: 20s
+    restart: unless-stopped
+    networks:
+      - smart-diet
+    depends_on:
+      postgres:
+        condition: service_healthy
+      ml-service:
+        condition: service_healthy
+
+  # pgAdmin for Database Management (optional)
+  pgadmin:
+    image: dpage/pgadmin4:latest
+    container_name: smart-diet-pgadmin
+    environment:
+      PGADMIN_DEFAULT_EMAIL: admin@smartdiet.com
+      PGADMIN_DEFAULT_PASSWORD: admin123
+    ports:
+      - "5050:80"
+    networks:
+      - smart-diet
+    depends_on:
+      - postgres
+
+volumes:
+  postgres_data:
+
+networks:
+  smart-diet:
+    driver: bridge
