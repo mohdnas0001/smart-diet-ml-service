@@ -165,6 +165,7 @@ curl -X POST http://localhost:8000/api/predict \
 Response:
 ```json
 {
+  "status": "success",
   "analysis_id": "uuid-here",
   "image_width": 640,
   "image_height": 480,
@@ -218,6 +219,23 @@ pytest tests/ -v
 ```
 
 All **35 tests** should pass without any model files (demo mode).
+
+---
+
+## Deploy to Render
+
+This repo includes `render.yaml` and a Docker-based deployment configuration.
+Render will build the app from `docker/Dockerfile` and expose `PORT 8000`.
+
+1. Connect the repository to Render.
+2. Use Docker as the environment type.
+3. Set these environment variables in Render:
+   - `USDA_API_KEY`
+   - `NUTRITIONIX_APP_ID`
+   - `NUTRITIONIX_APP_KEY`
+   - `DEMO_MODE` (`true` for demo-only mode, `false` to load model weights)
+
+If you want the service to use the included model weights, set `DEMO_MODE=false` only after confirming the model files exist in `./models/`.
 
 ---
 

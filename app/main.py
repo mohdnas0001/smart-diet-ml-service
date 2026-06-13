@@ -1,6 +1,7 @@
 from contextlib import asynccontextmanager
-from fastapi import FastAPI
+from fastapi import FastAPI, HTTPException, Request
 from fastapi.middleware.cors import CORSMiddleware
+from fastapi.responses import JSONResponse
 
 from app.config import settings
 from app.utils.logger import logger
@@ -13,6 +14,7 @@ from app.services.food_mapper import FoodMapper
 from app.services.usda_client import USDAClient
 from app.services.nutritionix_client import NutritionixClient
 from app.routes import predict, health, nutrients
+from app.schemas.response import ErrorResponse
 
 
 @asynccontextmanager
@@ -73,6 +75,27 @@ app = FastAPI(
     description="AI-powered Food Recognition & Nutrient Estimation microservice",
     lifespan=lifespan,
 )
+
+
+@app.exception_handler(HTTPException)
+async def http_exception_handler(request: Request, exc: HTTPException):
+    payload = ErrorResponse(
+        message=exc.detail if isinstance(exc.detail, str) else str(exc.detail),
+        error_code=exc.__class__.__name__,
+        details=None,
+    )
+    return JSONResponse(content=payload.model_dump(), status_code=exc.status_code)
+
+
+@app.exception_handler(Exception)
+async def unhandled_exception_handler(request: Request, exc: Exception):
+    logger.exception("Unhandled exception occurred")
+    payload = ErrorResponse(
+        message="Internal server error",
+        error_code="internal_server_error",
+        details=str(exc),
+    )
+    return JSONResponse(content=payload.model_dump(), status_code=500)
 
 app.add_middleware(
     CORSMiddleware,

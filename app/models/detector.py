@@ -38,14 +38,15 @@ class FoodDetector:
                 {"id": 3, "name": "fried_plantain", "region": "nigerian", "typical_portion_grams": 150},
             ]
 
-    def detect(self, image_array) -> List[Dict[str, Any]]:
+    def detect(self, image) -> List[Dict[str, Any]]:
         """
         Detect food items in an image.
+        Accepts PIL Image or numpy array.
         Returns list of dicts with keys: label, confidence, bbox (x, y, w, h normalised 0-1).
         """
         if self.demo_mode:
             return self._demo_detect()
-        results = self.model(image_array)
+        results = self.model(image)
         detections = []
         for r in results:
             for box in r.boxes:
