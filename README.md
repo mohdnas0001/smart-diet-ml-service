@@ -1,3 +1,14 @@
+---
+title: Smart Diet ML Service
+emoji: "🧠"
+colorFrom: blue
+colorTo: green
+sdk: docker
+sdk_version: "1"
+app_file: Dockerfile
+pinned: false
+---
+
 # Smart Diet ML Service 🧠🍽️
 
 AI-powered **Food Recognition & Nutrient Estimation** microservice for the Smart Diet and Food Analyzer system.

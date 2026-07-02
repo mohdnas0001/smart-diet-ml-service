@@ -1,0 +1,11 @@
+__pycache__/
+*.py[cod]
+*.log
+*.env
+venv/
+.git/
+datasets/
+training/
+scripts/
+node_modules/
+yolov8m.pt

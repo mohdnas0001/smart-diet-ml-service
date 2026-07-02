@@ -11,10 +11,12 @@ async def health(request: Request):
     uptime = round(time.time() - _start_time, 2)
     pipeline = getattr(request.app.state, "pipeline", None)
     demo = getattr(pipeline, "demo_mode", True) if pipeline else True
+    model_diagnostics = getattr(request.app.state, "model_diagnostics", {})
     return {
         "status": "ok",
         "version": settings.APP_VERSION,
         "uptime_seconds": uptime,
         "model_status": "demo" if demo else "loaded",
         "demo_mode": demo,
+        "model_diagnostics": model_diagnostics,
     }

@@ -14,7 +14,11 @@ class FoodClassifier:
     def __init__(self, model_path: str, food_categories_path: str):
         self.demo_mode = True
         self.model = None
+        self.input_size = 380
         self.trained_classes: List[str] = []  # class names in training order
+        self.model_path = str(Path(model_path).resolve())
+        self.load_error = ""
+        self.classes_file_found = False
         self._load_food_categories(food_categories_path)
         path = Path(model_path)
         if path.exists():
@@ -28,17 +32,22 @@ class FoodClassifier:
                 self.model.load_state_dict(ckpt)
                 self.model.eval()
                 self.demo_mode = False
+                self.load_error = ""
                 # Load class names saved during training
                 classes_path = Path(model_path).parent / "classifier_classes.json"
                 if classes_path.exists():
                     with open(classes_path) as f:
                         self.trained_classes = json.load(f)
+                    self.classes_file_found = True
                     logger.info("EfficientNet-B4 model loaded from %s (%d classes)", model_path, num_classes)
                 else:
+                    self.classes_file_found = False
                     logger.warning("classifier_classes.json not found — predictions may use wrong labels")
             except Exception as exc:
+                self.load_error = str(exc)
                 logger.warning("Could not load classifier model: %s — running in demo mode", exc)
         else:
+            self.load_error = f"Model file not found: {self.model_path}"
             logger.info("Classifier weights not found at %s — running in demo mode", model_path)
 
     def _load_food_categories(self, categories_path: str) -> None:
@@ -70,7 +79,7 @@ class FoodClassifier:
         
         # Convert to tensor using standard ImageNet transforms
         transform = transforms.Compose([
-            transforms.Resize((224, 224)),
+            transforms.Resize((self.input_size, self.input_size)),
             transforms.ToTensor(),
             transforms.Normalize(mean=[0.485, 0.456, 0.406],
                                 std=[0.229, 0.224, 0.225]),

@@ -52,6 +52,16 @@ async def lifespan(app: FastAPI):
     )
 
     demo = detector.demo_mode or classifier.demo_mode or settings.DEMO_MODE
+    demo_reasons = []
+    if settings.DEMO_MODE:
+        demo_reasons.append("DEMO_MODE=true in environment")
+    if detector.demo_mode:
+        detail = detector.load_error or "detector is in demo mode"
+        demo_reasons.append(f"detector demo mode: {detail}")
+    if classifier.demo_mode:
+        detail = classifier.load_error or "classifier is in demo mode"
+        demo_reasons.append(f"classifier demo mode: {detail}")
+
     pipeline = AnalysisPipeline(
         detector=detector,
         classifier=classifier,
@@ -63,6 +73,28 @@ async def lifespan(app: FastAPI):
 
     app.state.pipeline = pipeline
     app.state.nutrient_service = nutrient_svc
+    app.state.model_diagnostics = {
+        "env_demo_mode": settings.DEMO_MODE,
+        "pipeline_demo_mode": demo,
+        "demo_reasons": demo_reasons,
+        "detector": {
+            "loaded": not detector.demo_mode,
+            "model_path": detector.model_path,
+            "load_error": detector.load_error,
+        },
+        "classifier": {
+            "loaded": not classifier.demo_mode,
+            "model_path": classifier.model_path,
+            "load_error": classifier.load_error,
+            "trained_classes_count": len(classifier.trained_classes),
+            "classes_file_found": classifier.classes_file_found,
+        },
+    }
+
+    if demo:
+        logger.warning("Pipeline started in demo mode. Reasons: %s", "; ".join(demo_reasons) or "unknown")
+    else:
+        logger.info("Pipeline running with production models")
 
     logger.info("Pipeline ready. Demo mode: %s", demo)
     yield
