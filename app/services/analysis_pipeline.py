@@ -6,7 +6,7 @@ from PIL import Image
 from app.models.detector import FoodDetector
 from app.models.classifier import FoodClassifier
 from app.models.portion_estimator import PortionEstimator
-from app.services.preprocessing import preprocess_for_detection, preprocess_for_classification
+from app.services.preprocessing import preprocess_for_detection
 from app.services.nutrient_service import NutrientService
 from app.services.food_mapper import FoodMapper
 from app.schemas.response import (
@@ -41,6 +41,18 @@ class AnalysisPipeline:
         self.food_mapper = food_mapper
         self.demo_mode = demo_mode
 
+    def _crop_detection_region(self, image: Image.Image, bbox: dict) -> Image.Image:
+        """Crop a detection region from a normalized YOLO bbox."""
+        width, height = image.size
+        x1 = int(max(0.0, min(1.0, bbox.get("x", 0.0))) * width)
+        y1 = int(max(0.0, min(1.0, bbox.get("y", 0.0))) * height)
+        x2 = int(max(0.0, min(1.0, bbox.get("x", 0.0) + bbox.get("width", 0.0))) * width)
+        y2 = int(max(0.0, min(1.0, bbox.get("y", 0.0) + bbox.get("height", 0.0))) * height)
+
+        if x2 <= x1 or y2 <= y1:
+            return image
+        return image.crop((x1, y1, x2, y2))
+
     async def run(self, image: Image.Image) -> AnalysisResponse:
         start_ts = time.time()
         warnings: List[str] = []
@@ -63,8 +75,8 @@ class AnalysisPipeline:
             bbox_dict = det["bbox"]
 
             # 3. Classify (refine label)
-            cls_array = preprocess_for_classification(image)
-            cls_result = self.classifier.classify(cls_array, detected_label=label)
+            crop_image = self._crop_detection_region(det_array, bbox_dict)
+            cls_result = self.classifier.classify(crop_image, detected_label=label)
             refined_label = cls_result["name"]
             refined_confidence = cls_result["confidence"]
             region_str = cls_result.get("region", "nigerian")

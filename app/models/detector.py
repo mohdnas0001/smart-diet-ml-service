@@ -14,6 +14,8 @@ class FoodDetector:
     def __init__(self, model_path: str, food_categories_path: str):
         self.demo_mode = True
         self.model = None
+        self.model_path = str(Path(model_path).resolve())
+        self.load_error = ""
         self._load_food_categories(food_categories_path)
         path = Path(model_path)
         if path.exists():
@@ -21,10 +23,13 @@ class FoodDetector:
                 from ultralytics import YOLO
                 self.model = YOLO(str(path))
                 self.demo_mode = False
+                self.load_error = ""
                 logger.info("YOLOv8 model loaded from %s", model_path)
             except Exception as exc:
+                self.load_error = str(exc)
                 logger.warning("Could not load YOLOv8 model: %s — running in demo mode", exc)
         else:
+            self.load_error = f"Model file not found: {self.model_path}"
             logger.info("YOLOv8 weights not found at %s — running in demo mode", model_path)
 
     def _load_food_categories(self, categories_path: str) -> None:
